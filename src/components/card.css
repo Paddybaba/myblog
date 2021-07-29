@@ -1,0 +1,128 @@
+.cards {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding: 0;
+}
+.cards_item {
+  display: flex;
+  padding: 0.8rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.card_content {
+  width: 200%;
+  padding: 1rem;
+}
+
+.author-name {
+  color: #4f4f4f;
+  font-size: 1.2vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.duration {
+  color: #4f4f4f;
+  font-size: 1.2vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+.card_text {
+  font-size: 1.5vw;
+  font-weight: 700;
+  line-height: 1;
+  font-style: italic;
+  color: #4f4f4f;
+  /* font-weight: 400; */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.preface {
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: 1;
+  text-align: justify;
+  /* font-style: italic; */
+  color: #4f4f4f;
+  /* font-weight: 400; */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.made_by {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+.card_image img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.card_image {
+  margin: auto 0;
+  width: 180%;
+  padding: 3%;
+  /* overflow: hidden; */
+}
+/* .author-info {
+  display: flex;
+}
+.author-image img {
+  height: auto;
+  max-width: 20%;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.author-image {
+  border: 1px solid red;
+  margin: auto 0;
+  width: 20%;
+  padding: 3%;
+  /* overflow: hidden; */
+
+button {
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to right,
+    #ee83ce 0%,
+    #f6f882 51%,
+    #ee83ce 100%
+  );
+  background-size: 200%;
+  transition: all 500ms ease;
+  font-size: 1.2vw;
+  border: none;
+  padding: 0.5em;
+}
+button:hover {
+  background-position: right center;
+}
