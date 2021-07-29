@@ -1,27 +1,29 @@
 import React from "react";
 import "./card.css";
 
-const BlogCard1 = ({ drname, degree, addQual, description, image }) => {
+const BlogCard1 = ({
+  author_name,
+  uploaded_duration,
+  blog_title,
+  blog_preface,
+  blog_image,
+}) => {
   return (
     <div className="cards">
       <div className="cards-item">
         <div className="card">
           <div className="card_image">
-            <img src="/resources/design/depression.jpg" />
+            <img src={blog_image} />
           </div>
           <div className="card_content mt-auto">
             <div className="author-info">
               <div>
-                <h5 className="author-name">Dr Rachna Padamwar</h5>
-                <h5 className="duration">3 days ago ....</h5>
+                <h5 className="author-name">{author_name}</h5>
+                <h5 className="duration">{uploaded_duration}</h5>
               </div>
             </div>
-            <p className="card_text">The solution for Depression</p>
-            <p className="preface">
-              Depression is a mood disorder that can affect a person's daily
-              life. It may be described as feelings of sadness, loss, or anger.
-              Learn the causes, symptoms, ...
-            </p>
+            <p className="card_text">{blog_title}</p>
+            <p className="preface">{blog_preface}</p>
             <button type="button" className="">
               Read Blog
             </button>
